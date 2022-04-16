@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Pascal Ballet website</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+
+<body ng-app="MyApp" ng-cloak>
+  <!-- ******************** -->
+  <!-- ****   BANNER   **** -->
+  <!-- ******************** -->
+  <div layout="row">
+    <div flex style="display: flex; flex-direction:column; align-items: left; justify-content: center; flex-basis: 160px; flex-grow: 0; flex-shrink: 0;">
+      <img src="https://i.ibb.co/MM84RYP/pascal-photo.png" alt="pascal-photo" border="0" width=120px>
+    </div>
+    <div flex style="display: flex; flex-direction:column; align-items: left; justify-content: center;">
+        <h1>Pascal Ballet</h1>
+        pascal.ballet (at) univ-brest.fr
+    </div>
+    <div flex style="display:flex; flex-direction:column; align-items:flex-end; justify-content:center; padding:20px;">
+      <a href="http://univ-brest.fr">Université de Bretagne Occidentale - Brest - France</a>
+      <a href="https://www.univ-brest.fr/departement-informatique">Département d’Informatique</a>
+      <a href="https://latim.univ-brest.fr/">Laboratoire de Traitement de l'Information Médicale</a>
+    </div>
+    <div flex style="display: flex; flex-direction:column; align-items: flex-end; justify-content: center; flex-basis: 300px; flex-grow: 0; flex-shrink: 0; background-color:black;">
+      <img src="https://i0.wp.com/beachild.fr/wp-content/uploads/2020/05/logo-UBO-Blanc.png?fit=500%2C213&ssl=1" alt="UBO-logo" border="0" width=300px>
+    </div>
+  </div>
+    
+  <md-content>
+    <!-- ******************** -->
+    <!-- ****   INTRO   ***** -->
+    <!-- ******************** -->
+
+    <md-tabs md-dynamic-height="" md-border-bottom="">
+      <md-tab label="Intro">
+        <md-content class="md-padding" ng-controller="TabOne">
+          <h1 class="md-display-2">Intro</h1>
+            <div layout="row">
+              <div style="display:flex; flex-direction:column; align-items: center; flex-basis: 300px; flex-grow: 0; flex-shrink: 0;">
+                <img src="https://i.ibb.co/ncYVWqY/Capture-d-e-cran-2022-04-16-a-21-33-58.png" width="250" border="0">
+                <i>SimCells: multicellular simulator</i>
+              </div>
+              <div flex style="display: flex; flex-direction:column; align-items: left; justify-content: center;">
+                <p>I am an associate professor, teaching computer science and biocomputing.
+                  You're my student : <a href="https://moodlesciences.univ-brest.fr/moodle/" target="_blank">please go to Moodle Sciences - UBO</a>.</p>
+                <p>My researches focus on simulating multicellular systems.
+                Read <a href="https://hal.archives-ouvertes.fr/search/index/?q=%2A&authIdHal_s=pascal-ballet">some of my papers</a> or
+                <a href="https://www.youtube.com/user/pballet/videos" target="_blank">explore my youtube channel</a></p>
+                <p>Checkout the software I'm implied in by clicking the upper tabs, and go explore the living at cellular level.</p>
+            </div>
+          </div>
+        </md-content>
+      </md-tab>
+      
+      <!-- ******************** -->
+      <!-- **** CENTYLLION **** -->
+      <!-- ******************** -->
+      <md-tab label="Centyllion">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Centyllion</h1>
+          
+          <div layout="row">
+            <div style="display:flex; flex-basis: 400px; flex-grow: 0; flex-shrink: 0;">
+              <video controls width="350">
+                <source src="https://centyllion.com/assets/images/angiogenesys.mp4" type="video/mp4">
+              </video> 
+            </div>
+            <div flex style="display: flex; flex-direction:column; align-items: left; justify-content: center;">
+              <p><a href="https://centyllion.com" target="_blank">Centyllion</a> is an online multiagents simulator.</p>
+              <p>You can create numerous complex systems playing on a grid by adding agents and their behaviors.</p>
+              <p>Take a look at the hundred of examples made by teachers and students (then create your own simulations) :</p>
+              <ul>
+                <li><a href="https://app.centyllion.com/show?simulation=927d41fb-9f07-4385-828c-f149b705a7c2" target="_blank">stalagmit formation</a>,</li>
+                <li><a href="https://app.centyllion.com/show?simulation=dc83a812-4c51-4558-98dc-e0236f30bd03" target="_blank">blood coagulation</a>,</li>
+                <li><a href="https://app.centyllion.com/show?simulation=5f6e53ba-3d8b-43c1-94bf-fcefa127ac1e" target="_blank">angiogenesis</a>,</li>
+                <li><a href="https://app.centyllion.com/show?simulation=964d8a60-24b3-409c-8528-f48561f4337b" target="_blank">traffic jam</a>,</li>
+                <li><a href="https://app.centyllion.com/show?simulation=a15d9500-db66-4d3f-81b1-1a0b68a7e272" target="_blank">water cycle</a>,</li>
+                <li><a href="https://docs.google.com/document/d/1excq9RvBF85S5Ir6FGIVfrH5sxDx5_LAHZaiEMX6yMQ/edit?usp=sharing">Read the tutorial and try to make the exercice</a></li>
+              </ul>
+            </div>
+          </div>
+        </md-content>
+      </md-tab>
+      
+    
+    
+
+      <!-- ************************ -->
+      <!-- **** MATRIX STUDIO  **** -->
+      <!-- ************************ -->
+      <md-tab label="Matrix Studio">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Matrix Studio</h1>
+          <div layout="row">
+            <div style="display:flex; flex-basis: 550px; flex-grow: 0; flex-shrink: 0;">
+              <iframe width="500" src="https://www.youtube.com/embed/EVl54Skrs2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            </div>
+            <div flex style="display: flex; flex-direction:column; align-items: left; justify-content: center;">
+              <p><a href="https://github.com/pascal-ballet/matrixstudio" target="_blank">Matrix Studio</a> is an integrated development environment for OpenCL (GPU + CPU multicore programming).</p>
+              <p>You can directly code in OpenCL, without the difficulty of programming the host.</p>
+              <p>Here are the different parts of the software :</p>
+              <ul>
+                <li>kernel editing,</li>
+                <li>matrices definition and visualisation (1, 2 or 3D),</li>
+                <li>graphical task diagram,</li>
+                <li>multiple libraries writing.</li>
+              </ul>
+              <p>Some usefull resources :</p>
+              <ul>
+                <li><a href="https://www.youtube.com/watch?v=O9Yz-pL_31w" target="_blank">Code your first OpenCL program in 2 minutes</a></li>
+                <li><a href="http://virtulab.univ-brest.fr/MatrixStudioBook.pdf" target="_blank">Try the different tutorials and exercices</a></li>
+                <li>Want to dive inside? <a href="https://drive.google.com/file/d/1qhRyhhUKCpCz7iy0F1k7JPOqAbtsvRXE/view?usp=sharing" target="_blank">Read the paper</a> explaining how it works.</li>
+              </ul>
+            </div>
+          </div>
+      </md-tab>  
+    
+      <!-- ******************** -->
+      <!-- **** NETBIODYN  **** -->
+      <!-- ******************** -->
+      <md-tab label="NetBioDyn">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Net-BioDyn</h1>
+          <div layout="row">
+            <div style="display:flex; flex-basis: 450px; flex-grow: 0; flex-shrink: 0;">
+              <iframe width="400" src="https://www.youtube.com/embed/tYvZ1ES4qIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            </div>
+            <div flex style="display: flex; flex-direction:column; align-items: left; justify-content: center;">
+              <p><a href=https://netbiodyn.tuxfamily.org/NetBioDyn/Accueil.html target="_blank">Net-BioDyn</a> is a desktop application for creating multicellular systems.</p>
+              <p>An agent is a cell or a molecule, a membrane or a filament, etc.</p>
+              <p>For example, you can add behaviours to a cell-agent imitating :</p>
+              <ul>
+                <li>migration,
+                <li>division,
+                <li>death,
+                <li>differentiation, etc.</li>
+              </ul>
+              <p>Some usefull resources :</p>
+              <ul>
+                <li><a href="https://www.youtube.com/channel/UC4MbXTw28l_if1tHaBOnZ9g" target="_blank">Youtube channel</a> with examples (in french)</li>
+                <li>How teachers use NetBioDyn? Simply search NetBioDyn with Google</li>
+                <li><a href="https://docs.google.com/document/d/1VWTJaFk0Gfv6Hg-cXRZ2GpT9zTwkBMf9W08ZeOKfHzQ/edit?usp=sharing">Try the different exercices made by teachers</a></li>
+                <li><a href="http://acces.ens-lyon.fr/acces/logiciels/applications/netbiodyn" target="_blank">Examples</a> from the Institut français de l'éducation (Ifé)</li>
+                <li>Want to dive inside? <a href="https://hal.archives-ouvertes.fr/hal-01407520" target="_blank">Read the paper</a> explaining how it works.</li>
+              </ul>
+            </div>
+          </div>
+      </md-tab>
+        
+    
+      <!-- ******************** -->
+      <!-- **** SIMCELLS  ***** -->
+      <!-- ******************** -->
+      <md-tab label="SimCells">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">SimCells</h1>
+          <div layout="row">
+            <div style="display:flex; flex-basis: 600px; flex-grow: 0; flex-shrink: 0;">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/BNoD9DjfTXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div flex style="display: flex; flex-direction:column; align-items: left; justify-content: center;">
+              <p><a href="https://www.amazon.fr/clouddrive/share/nQc9NbHpKyIYhpn4fu60rP30G5Q9hybHcJxZIu7rDcT" target="_blank">Download SimCells</a>, a desktop application for simulating multicellular systems.</p>
+              <p>An agent represents a cell with :</p>
+              <ul>
+                <li>a deformable membrane,
+                <li>a membrane adhesion,
+                <li>complex behaviours made using a visual scripting language,
+              </ul>
+              <p>Simulator possibilities :
+              <ul>
+                <li>display 2D or 3D environments,</li>
+                <li>add upto millions of cells,</li>
+                <li>show or export data for excel treatments,</li>
+                <li>import 3D images to contextualise your simulations, etc.</li>
+              </ul>              
+              <p>Some usefull resources :</p>
+              <ul>
+                <li><a href="https://www.youtube.com/results?search_query=simcells+pascal+ballet" target="_blank">Youtube videos</a>.</li>
+                <li><a href="https://ubotube.univ-brest.fr/videostream/?s=pascal+ballet"target="_blank">UBO Tube videos</a></li>
+                <li>Read the <a href="https://docs.google.com/document/d/1mD5vXizofsIem5vFxJNFXmjFN9SjUneW4BCZtFtvQBA/edit?usp=sharing" target="_blank">booklet</a> explaining the basis of SimCells.</li>
+                <li>Want to go further? <a href="https://hal.archives-ouvertes.fr/hal-01853293" target="_blank">Read the paper about SimCells</a>.</li>
+              </ul>
+              <p> NB : source code not available.
+            </div>
+          </div>
+      </md-tab>
+        
+      <!-- ******************** -->
+      <!-- **** SOURCE CODE *** -->
+      <!-- ******************** -->
+      <md-tab label="Source code">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Source code</h1>
+          <div layout="row">
+            <div style="display:flex; flex-basis: 600px; flex-grow: 0; flex-shrink: 0;">
+              <img src="https://cdn.icon-icons.com/icons2/2368/PNG/512/github_logo_icon_143772.png" width = "200" height = "200"></img>
+            </div>
+            <div flex style="display: flex; flex-direction:column; align-items: left; justify-content: center;">
+              <p><a href="https://github.com/pascal-ballet?tab=repositories" target="_blank">Go to GitHub to see some of my projects and their source code</a>.</p>
+              <p><a href="https://codepen.io/pascal-ballet/pens/popular" target="_blank">Go to CodePen.io to see more of my projects and their source code</a>.</p>
+              <p><a href="https://www.shadertoy.com/view/3dd3RB" target="_blank">Try my Game Of Life made in shaders</a>.</p>
+            </div>
+          </div>
+      </md-tab>   
+        
+    </md-tabs>
+  </md-content>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+  
+  <script src="scripts/app.js"></script>
+  
+</body>
+
+</html>
